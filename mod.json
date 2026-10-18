@@ -1,0 +1,30 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "yourname.predictive-input-buffer",
+	"name": "Predictive Input Buffer",
+	"developer": "yourname",
+	"description": "Buffers jump presses for a few physics ticks and logs every saved input to a live console. Press F6 to cycle stages.",
+	"settings": {
+		"show-console": {
+			"type": "bool",
+			"name": "Show Live Console",
+			"description": "Open a separate console window that logs every buffered input.",
+			"default": true
+		},
+		"start-stage": {
+			"type": "int",
+			"name": "Starting Stage",
+			"description": "Stage the mod starts in (1-5). Stage 5 = buffer OFF.",
+			"default": 1,
+			"min": 1,
+			"max": 5,
+			"control": {
+				"slider": true
+			}
+		}
+	}
+}
