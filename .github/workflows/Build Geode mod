@@ -1,12 +1,12 @@
 name: Build Geode Mod
 
-   on:
+on:
      workflow_dispatch:
      push:
        branches:
          - "**"
 
-   jobs:
+jobs:
      build:
        runs-on: windows-latest
        steps:
